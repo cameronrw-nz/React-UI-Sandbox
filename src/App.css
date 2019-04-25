@@ -1,33 +1,75 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card {
+    border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+    display: flex;
+}
+
+.card-line {
+    display: flex;
+    align-items: baseline;
+}
+
+.card-line > div {
+    flex: 1 1 auto;
+
+    margin: 0px 5px; /* and that, will result in a 10px gap */
+}
+
+.card-primary-big {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.card-primary-small {
+    font-size: 13px;
+    align-self: bottom;
+}
+
+.card-line.secondary > div {
+    font-size: 13px;
+}
+
+.dot {
+    align-self: center;
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
 }
